@@ -15,9 +15,11 @@ class Digraph(Graph):
         for i in range(len(self.data)):
             for j in range(len(self.data[i])):
                 if self.data[i][j] > 0:
-                    result += '{} -> {} [label = "{weight}" weight = "{weight}"]\n'.format(
-                        i, j, weight=self.data[i][j])
-                    self.edges[i] = j
+                    if self.has_path(i, j) and self.has_path(j, i):
+                        if j < i:
+                            result += '{} -> {} [label = "{weight}" weight = "{weight}" dir=both]\n'.format(i, j, weight=self.data[i][j])
+                    else:
+                        result += '{} -> {} [label = "{weight}" weight = "{weight}"]\n'.format(i, j, weight=self.data[i][j])
 
         result += '}\n'
         return result
