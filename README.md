@@ -24,4 +24,4 @@ digraph {
 3 -> 1 [label = "8" weight = "8" dir=both]
 }
 
-![Example of genereted graph](https://dreampuf.github.io/GraphvizOnline/#digraph%20%7B%0A0%20-%3E%201%20%5Blabel%20%3D%20%223%22%20weight%20%3D%20%223%22%5D%0A2%20-%3E%200%20%5Blabel%20%3D%20%225%22%20weight%20%3D%20%225%22%5D%0A2%20-%3E%201%20%5Blabel%20%3D%20%227%22%20weight%20%3D%20%227%22%20dir%3Dboth%5D%0A3%20-%3E%201%20%5Blabel%20%3D%20%228%22%20weight%20%3D%20%228%22%20dir%3Dboth%5D%0A%7D)
+![Example of genereted graph](https://bit.ly/3Dau5Uv)
