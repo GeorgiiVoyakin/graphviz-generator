@@ -24,4 +24,4 @@ digraph {
 3 -> 1 [label = "8" weight = "8" dir=both]
 }
 
-![Example of genereted graph](https://bit.ly/3Dau5Uv)
+![Example of genereted graph](https://raw.githubusercontent.com/GeorgiiVoyakin/graphviz-generator/f0e59d476b8c8acb68ddc93ddb1f9a1cb9c55f07/graphviz.png)
