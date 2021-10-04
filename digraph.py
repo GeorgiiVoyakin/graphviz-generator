@@ -14,10 +14,10 @@ class Digraph(Graph):
 
         for i in range(len(self.data)):
             for j in range(len(self.data[i])):
-                if j > 0:
-                    result += '{} -> {}\n'.format(i, j)
-                else:
-                    result += '{}\n'.format(j)
+                if self.data[i][j] > 0:
+                    result += '{} -> {} [label = "{weight}" weight = "{weight}"]\n'.format(
+                        i, j, weight=self.data[i][j])
+                    self.edges[i] = j
 
         result += '}\n'
         return result
