@@ -12,7 +12,7 @@ class Graph:
         '''
         return self.data[source][dest] > 0 
 
-    def has_connection(self, vertex_a: int, vertex_b: int) -&gt; bool:
+    def has_connection(self, vertex_a: int, vertex_b: int) -> bool:
         '''
         Returns True if vertex_a has edge to vertex_b
         '''
