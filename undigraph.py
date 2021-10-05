@@ -17,7 +17,6 @@ class UndiGraph(Graph):
                 if self.data[i][j] > 0 and j < i:
                     result += '{} -- {} [label = "{weight}" weight = "{weight}"]\n'.format(
                         i, j, weight=self.data[i][j])
-                    self.edges[i] = j
 
         result += '}\n'
         return result
